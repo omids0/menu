@@ -1,7 +1,9 @@
 {
   "name": "menu",
   "version": "0.1.0",
-  "private": true,"engines": {
+  "private": true,
+  "homepage": "http://omids0.github.io/menu.git",
+  "engines": {
     "node": "16.13.0",
     "npm": "8.1.4"
   },
@@ -13,6 +15,7 @@
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.7.2",
     "express": "^4.17.1",
+    "gh-pages": "^4.0.0",
     "mongoose": "^6.1.1",
     "nodemon": "^2.0.15",
     "react": "^17.0.2",
@@ -28,11 +31,13 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "nodemon server.js"
+    "server": "nodemon ../server.js"
   },
   "eslintConfig": {
     "extends": [
