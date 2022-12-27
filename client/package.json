@@ -2,20 +2,15 @@
   "name": "menu",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://omids0.github.io/menu.git",
   "engines": {
     "node": "16.13.0",
     "npm": "8.1.4"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.7.2",
     "express": "^4.17.1",
-    "gh-pages": "^4.0.0",
     "mongoose": "^6.1.1",
     "nodemon": "^2.0.15",
     "react": "^17.0.2",
@@ -25,10 +20,15 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "redux": "^4.1.2",
-    "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
     "router": "^1.3.6",
     "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.9",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -37,7 +37,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "nodemon ../server.js"
+    "server": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [
